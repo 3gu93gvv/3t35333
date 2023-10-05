@@ -91,17 +91,17 @@ tool = f"""
 {hd}Nhập Số \033[1;31m[\033[1;33m9\033[1;31m] \033[1;32mTool REG PRO5 + UP AVT
 {hd}Nhập Số \033[1;31m[\033[1;33m10\033[1;31m] \033[1;32mTool Buff View Story Pro5 
 {hd}Nhập Số \033[1;31m[\033[1;33m11\033[1;31m] \033[1;32mTool Buff Reaction Bằng Page Pro5 {trang}[Đang Update]
-{hd}Nhập Số \033[1;31m[\033[1;33m12\033[1;31m] \033[1;32mTool Share Max Speed Bằng Token Pro5 {trang}[Đang Update]
+{hd}Nhập Số \033[1;31m[\033[1;33m12\033[1;31m] \033[1;32mTool Share Max Speed Bằng Token Pro5
 {hd}Nhập Số \033[1;31m[\033[1;33m13\033[1;31m] \033[1;32mTool Buff Follow Bằng Page Pro5
 {hd}Nhập Số \033[1;31m[\033[1;33m14\033[1;31m] \033[1;32mTool Buff Mem Group Bằng Page Pro5
 {hd}Nhập Số \033[1;31m[\033[1;33m15\033[1;31m] \033[1;32mTool Chuyển Quyền Admin Page Pro5
 {hd}Nhập Số \033[1;31m[\033[1;33m16\033[1;31m] \033[1;32mTool Buff Comment Pro5 {trang}[Đang Update]
 {hd}Nhập Số \033[1;31m[\033[1;33m17\033[1;31m] \033[1;32mTool Kích Hoạt Pro5 {trang}[Đang Update]
-{red}────────────────────────────────────────────────────────────────────────"""
-#{do}╔══════════════════════════╗
-#{do}║ {vang}Tool Công Cụ + Tiện Ích  {do}║
-#{do}╚══════════════════════════╝
-
+{red}────────────────────────────────────────────────────────────────────────
+{do}╔══════════════════════════╗
+{do}║ {vang}Tool Công Cụ + Tiện Ích  {do}║
+{do}╚══════════════════════════╝
+{hd}Nhập Số \033[1;31m[\033[1;33m18\033[1;31m] \033[1;32mTool Spam SMS + CALL"""
 print(tool)
 chon = input(f'{hd}{luc}Nhập Lựa Chọn: {vang}')
 
@@ -140,7 +140,7 @@ if chon == '11':
  exec(requests.get('').text)
 #BUFF SHARE PRO5
 if chon == '12':
- exec(requests.get('').text)
+ exec(requests.get('https://run.mocky.io/v3/033bd2c9-7ed6-432e-8661-541569093842').text)
 #BUFF FL PRO5
 if chon == '13':
  exec(requests.get('https://run.mocky.io/v3/fbcc0689-30fb-45b5-9c12-210effae8e5d').text)
@@ -156,3 +156,8 @@ if chon == '16':
 #KÍCH PRO5
 if chon == '17':
  exec(requests.get('').text)
+if chon == '18':
+ exec(requests.get('https://run.mocky.io/v3/e4b7a37d-b5cb-4c3f-9494-d918cbea397b').text)
+else:
+ print (f"{do}Sai Lựa Chọn")
+ exit()
